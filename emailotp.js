@@ -6,9 +6,9 @@ function sendOTP() {
 
 	let emailbody = `<h2>Your OTP is </h2>${otp_val}`;
 	Email.send({
-    SecureToken : "f17f704c-7e08-4f7a-a004-cd06e8059974",
+    SecureToken : "",
     To : email.value,
-    From : "edmonpetrosyan29@gmail.com",
+    From : "",
     Subject : "Email OTP using JavaScript",
     Body : emailbody,
 }).then(
